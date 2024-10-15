@@ -1,0 +1,232 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio: Projeto de Rede de Computadores</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #3a3a3a, #505050);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            border-bottom: 4px solid #ff6f61;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        nav {
+            background-color: #3a3a3a;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        nav a {
+            color: white;
+            margin: 0 25px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ff6f61;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 40px;
+            background-color: #f9f9f9;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-top: 4px solid #ff6f61;
+        }
+
+        h2 {
+            color: #505050;
+            font-size: 2rem;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        h2:before {
+            content: "";
+            position: absolute;
+            width: 50px;
+            height: 4px;
+            background-color: #ff6f61;
+            bottom: -10px;
+            left: 0;
+        }
+
+        p {
+            line-height: 1.8;
+            margin-bottom: 30px;
+            font-size: 1.2rem;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        ul li:before {
+            content: '•';
+            color: #ff6f61;
+            font-weight: bold;
+            display: inline-block; 
+            width: 1em;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #3a3a3a;
+            color: white;
+            padding: 20px;
+            margin-top: 60px;
+            border-top: 4px solid #ff6f61;
+        }
+
+        footer a {
+            color: #ff6f61;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        img {
+            max-width: 20%;
+            height: auto;
+            display: block;
+            margin: 30px auto;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            padding: 12px 25px;
+            background-color: #ff6f61;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-size: 1rem;
+        }
+
+        button:hover {
+            background-color: #e25750;
+        }
+
+        section {
+            margin-bottom: 60px;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(255, 111, 97, 0.1), rgba(50, 50, 50, 0.1));
+            z-index: -1;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Projeto de Rede de Computadores</h1>
+    </header>
+
+    <nav>
+        <a href="#introducao">Introdução</a>
+        <a href="#planejamento">Planejamento</a>
+        <a href="#configuracao">Configuração</a>
+        <a href="#implementacao">Implementação</a>
+    </nav>
+
+    <div class="container">
+        <section id="introducao">
+            <h2>Introdução</h2>
+            <p>
+                Bem-vindo ao meu portfólio, onde apresento um projeto de rede de computadores, detalhando desde o planejamento até a implementação final. O objetivo é interligar dispositivos, facilitando a comunicação e o compartilhamento de recursos, como arquivos e internet.
+            </p>
+            <p>
+                Este projeto envolve a criação de uma rede local (LAN) conectando computadores a um switch e um servidor, cobrindo todas as etapas necessárias para garantir uma rede eficiente e funcional.
+            </p>
+        </section>
+
+        <section id="planejamento">
+            <h2>Planejamento da Rede</h2>
+            <p>
+                A primeira etapa foi o planejamento. Definimos o objetivo da rede, que suporta compartilhamento de arquivos e acesso à internet, e escolhemos uma topologia em estrela, com todos os dispositivos conectados a um switch central.
+            </p>
+            <ul>
+                <li><strong>Objetivo:</strong> Comunicação e compartilhamento de recursos.</li>
+                <li><strong>Topologia:</strong> Em estrela.</li>
+                <li><strong>Equipamentos:</strong> 2 PCs, switch, servidor, cabos Ethernet e roteador.</li>
+            </ul>
+            <img src="laboratorio.JPG" alt="Imagem de planejamento de rede">
+        </section>
+
+        <section id="configuracao">
+            <h2>Configuração dos Dispositivos</h2>
+            <p>
+                A seguir, realizamos a configuração dos dispositivos, conectando os PCs ao switch, atribuindo endereços IP únicos e configurando o servidor e o roteador para fornecer serviços de rede.
+            </p>
+            <ul>
+                <li>Configuração dos PCs e atribuição de endereços IP.</li>
+                <li>Conexão dos dispositivos ao switch e configuração do servidor para fornecer DHCP e DNS.</li>
+                <li>Configuração do roteador para fornecer acesso à internet.</li>
+            </ul>
+            <img src="labo1.JPG" alt="Configuração de dispositivos da rede">
+        </section>
+
+        <section id="implementacao">
+            <h2>Implementação Final</h2>
+            <p>
+                Finalmente, após a configuração, realizamos testes de conectividade, verificando se os dispositivos podem se comunicar entre si e acessar a internet.
+            </p>
+            <p>Testes de ping e conectividade confirmaram o funcionamento correto da rede.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>Projeto por [Seu Nome] | <a href="mailto:email@exemplo.com">Contato</a></p>
+    </footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
